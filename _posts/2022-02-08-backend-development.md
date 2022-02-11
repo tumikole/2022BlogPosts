@@ -34,5 +34,5 @@ ex:
 
  # Conclusion
 
- Sabelo's project taught me that in software development, there are many solutions to create functions and theres always ana answer to everything. 
+ Sabelo's project taught me that in software development, there are many solutions to create functions and theres always an answer to everything. 
 
