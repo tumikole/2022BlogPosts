@@ -44,6 +44,6 @@ You firstly start by installing redux package on your frontend or client side an
 Reducers takes an action  and the previous state  of the application and returns the new state. Basically the action describes what happened and it is the reducers's job to return the new state based on that action.
 
 
- ## React 
+## React 
 
 We use react to build a user interface. We use it for handling the view for the mobile and web apps. So basically we use react to build client sides.
