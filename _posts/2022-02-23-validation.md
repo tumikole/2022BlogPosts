@@ -52,10 +52,10 @@ app.post('/login', function(req, res) {
     res.send(`ok`);
 
   }
-  
+
 });
 
 
 # Conclusion
 
-It is very much easier when using hapi/joi as your validator package because it safes time and safe to use.
+It is very much easier when using hapi/joi as your validator package because it saves time and safe to use.
