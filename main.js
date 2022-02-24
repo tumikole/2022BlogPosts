@@ -281,5 +281,129 @@
 //   });
 // });
 
-
+// ------------
 // Advances node and express
+
+// 'use strict';
+// require('dotenv').config();
+// const express = require('express');
+// const myDB = require('./connection');
+// const fccTesting = require('./freeCodeCamp/fcctesting.js');
+// const session = require('express-session');
+// const passport = require('passport')
+// const mongodb = require('mongodb')
+// const mySecret = process.env['SESSION_SECRET', 'MONGO_URI']
+// const ObjectID = require('mongodb').ObjectID;
+// const LocalStrategy = require('passport-local');
+
+
+// const app = express();
+
+// fccTesting(app); //For FCC testing purposes
+// app.use('/public', express.static(process.cwd() + '/public'));
+// app.use(express.json());
+// app.use(express.urlencoded({ extended: true }));
+// app.set('view engine', 'pug')
+// app.use(passport.initialize());
+// app.use(passport.session());
+// app.use(session({
+//   secret: process.env.SESSION_SECRET,
+//   resave: true,
+//   saveUninitialized: true,
+//   cookie: { secure: false }
+// }));
+
+// myDB(async client => {
+//   const myDataBase = await client.db('database').collection('users');
+
+//   // Be sure to change the title
+//   app.route('/').get((req, res) => {
+//     //Change the response to render the Pug template
+//     res.render('pug', {
+//       title: 'Connected to Database',
+//       message: 'Please login',
+//       showLogin: true
+//     });
+//   });
+// passport.serializeUser((user, done) => {
+//   done(null, user._id);
+// });
+
+// passport.deserializeUser((id, done) => {
+//   myDataBase.findOne({ _id: new ObjectID(id) }, (err, doc) => {
+//     done(null, doc);
+//   });
+// });
+//   // Be sure to add this...
+// }).catch(e => {
+//   app.route('/').get((req, res) => {
+//     res.render('pug', { title: e, message: 'Unable to login' });
+//   });
+// });
+
+// passport.use(new LocalStrategy(
+//   function(username, password, done) {
+//     myDataBase.findOne({ username: username }, function (err, user) {
+//       console.log('User '+ username +' attempted to log in.');
+//       if (err) { return done(err); }
+//       if (!user) { return done(null, false); }
+//       if (password !== user.password) { return done(null, false); }
+//       return done(null, user);
+//     });
+//   }
+// ));
+
+//   app.post('/login', passport.authenticate('local', {failureRedirect: '/'}),
+//           (req, res) => {
+//             res.render('/profile');
+//           })
+           
+  
+
+
+
+// const PORT = process.env.PORT || 3000;
+// app.listen(PORT, () => {
+//   console.log('Listening on port ' + PORT);
+// });
+
+// ----------------------
+// package.json 
+// {
+//     "//1": "describes your app and its dependencies",
+//     "//2": "https://docs.npmjs.com/files/package.json",
+//     "//3": "updating this file will download and update your packages",
+//     "name": "fcc-advanced-node-and-express",
+//     "author": "http://github.com/JosephLivengood",
+//     "version": "0.0.1",
+//     "description": "What am I about?",
+//     "main": "server.js",
+//     "scripts": {
+//       "start": "node server.js",
+//       "dev": "nodemon server.js"
+//     },
+//     "dependencies": {
+//       "dotenv": "^8.2.0",
+//       "express": "^4.16.1",
+//       "express-session": "^1.17.2",
+//       "mongodb": "^3.6.12",
+//       "passport": "^0.4.1",
+//       "passport-local": "^1.0.0",
+//       "pug": "^3.0.2"
+//     },
+//     "repository": {
+//       "type": "git",
+//       "url": "https://glitch.com/#!/project/welcome-project"
+//     },
+//     "keywords": [
+//       "node",
+//       "express",
+//       "pug",
+//       "passport",
+//       "socketio"
+//     ],
+//     "license": "MIT",
+//     "devDependencies": {
+//       "nodemon": "^2.0.4"
+//     }
+//   }
