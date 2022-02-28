@@ -14,7 +14,7 @@ Sql it is one of the relational database. Meaning you are able to create table a
 
 You will need to install sql on your terminal and create username and password for login. Once you are done, you can access your sql database. When you are using node js as your backend, you will need to install pg as your (npm) dependency. And also create sql file where you will be specifying your sql fields or your sql schema. 
 
-This is how you create database in sql : CREATE DATABASE <db_name>. Therefore you create your table with the fields or your schema :
+This is how you create database in sql : CREATE DATABASE db_name. Therefore you create your table with the fields or your schema :
 
 ex:
 CREATE TABLE students(
