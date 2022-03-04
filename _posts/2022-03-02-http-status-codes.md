@@ -19,7 +19,7 @@ All HTTP response status codes are separated into five classes or categories. Th
 ## 5. Server error
 
 ## 1. Informational response
-### The request was received, continuing process
+### On this one the request was received, continuing process
  
 #### - 100 Continue
 #### - 101
