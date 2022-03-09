@@ -1,7 +1,7 @@
 ---
 Layout:
-Title:"Information and security"
-Date:"2022-03-08"
+Title: "Information and security"
+Date: "2022-03-08"
 ---
 
 # Introduction
