@@ -33,7 +33,7 @@ Set a value for saltRounds
 
 example:
 
-<bcrypt.genSalt(saltRounds, function(err, salt) {
+bcrypt.genSalt(saltRounds, function(err, salt) {
   // returns salt
 });
 
@@ -47,11 +47,11 @@ Hash the Password
 
 example:
 
-<bcrypt.genSalt(saltRounds, function(err, salt) {
-  <bcrypt.hash(password, salt, function(err, hash) {
-  <// returns hash
+`bcrypt.genSalt(saltRounds, function(err, salt) {
+  bcrypt.hash(password, salt, function(err, hash) {
+  // returns hash
   console.log(hash);
   });
 });
-
+`
 optional
