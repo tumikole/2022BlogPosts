@@ -33,8 +33,9 @@ Set a value for saltRounds
 
 example:
 
-bcrypt.genSalt(saltRounds, function(err, salt) { (<-- two spaces)
-  // returns salt (<-- two spaces)
+bcrypt.genSalt(saltRounds, function(err, salt) { <br>
+ 
+  // returns salt <br>
 });
 
 Hash the Password
